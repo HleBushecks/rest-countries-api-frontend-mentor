@@ -1,0 +1,52 @@
+.select {
+  position: relative;
+}
+
+.title {
+  background: var(--background-secondary-color);
+  width: 200px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  color: var(--text-color);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.title h2 {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.list {
+  position: absolute;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s linear;
+  background: var(--background-secondary-color);
+  width: 100%;
+  margin-top: 4px;
+  padding: 0 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+}
+
+.activeList {
+  padding: 17px 25px;
+  max-height: 162px;
+}
+
+.list button {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  background: none;
+  text-align: start;
+  cursor: pointer;
+}

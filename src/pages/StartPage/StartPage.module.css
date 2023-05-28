@@ -1,0 +1,18 @@
+.countries {
+  margin-top: 47px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 76px 73px;
+}
+
+.observer {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+}
+
+@media(max-width: 850px) {
+  .countries {
+    justify-content: center;
+  }
+}

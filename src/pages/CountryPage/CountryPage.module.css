@@ -1,0 +1,101 @@
+.backBtn {
+  margin: 80px 0;
+}
+
+.backBtn button {
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  width: 136px;
+  height: 40px;
+  background: var(--background-secondary-color);
+  border: none;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  color: var(--text-color);
+  transition: transform .1s linear;
+  cursor: pointer;
+}
+
+.backBtn button:hover {
+  transform: scale(1.05);
+}
+
+.sectionInfo {
+  display: flex;
+  justify-content: center;
+  gap: 152px;
+}
+
+.sectionInfo img {
+  width: 555px;
+  height: 400px;
+  object-fit: contain;
+}
+
+.info {
+  color: var(--text-color);
+  max-width: 571px;
+  
+}
+
+.info h2 {
+  font-weight: 800;
+  font-size: 32px;
+  margin-bottom: 33px;
+}
+
+.infoValue {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 122px;
+}
+
+.infoValue div {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+
+.borders {
+  margin-top: 76px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 70px;
+}
+
+.borders button {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  background: var(--background-secondary-color);
+  border: none;
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 14px;
+  padding: 5px 27px;
+  transition: transform .1s linear;
+  cursor: pointer;
+}
+
+.borders button:hover {
+  transform: scale(1.05);
+}
+
+@media(max-width: 1050px) {
+  .sectionInfo {
+    flex-direction: column;
+    gap: 70px;
+  }
+
+
+  .sectionInfo img {
+    width: 100%;
+    height: unset;
+  }
+}

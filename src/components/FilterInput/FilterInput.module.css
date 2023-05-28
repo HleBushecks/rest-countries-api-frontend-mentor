@@ -1,0 +1,34 @@
+.filterInput {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 47px;
+}
+
+.filterInput input {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+  background: var(--background-secondary-color);
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  max-width: 480px;
+  width: 100%;
+  height: 56px;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--text-color);
+  padding: 20px 30px;
+}
+
+.filterInput input::placeholder {
+  color: var(--text-color);
+  opacity: .5;
+}
+
+@media(max-width: 850px) {
+  .filterInput {
+    flex-direction: column;
+    gap: 51px;
+    align-items: center;
+  }
+
+}
